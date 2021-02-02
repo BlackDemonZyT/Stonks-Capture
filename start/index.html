@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta name="viewport" content="height=device-height, initial-scale=1.0">
+        <title id="title"></title>
+    </head>
+    <body>
+        <div id="CustomDraggableBar" draggable="true"></div>
+        <div id="GeneralZone"></div>
+    </body>
+    <style>
+        *
+        {
+            border: 0px;
+            margin: 0px;
+        }
+
+        body
+        {
+            
+        }
+
+        #CustomDraggableBar
+        {
+            position: absolute;
+            background-color: rgb(61, 61, 61);
+            -webkit-app-region: drag;
+            width: 99.99%;
+            height: 65px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            z-index: 2;
+        }
+
+        #GeneralZone
+        {
+            position: absolute;
+            background-color: white;
+            height: 97%;
+            width: 99.99%;
+            top: 20px;
+            z-index: 1;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    </style>
+</html>
